@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import TabButton from './TabButton';
 import AboutTab from './AboutTab';
 import PostsTab from './PostsTab';
@@ -7,7 +7,7 @@ import ContactTab from './ContactTab';
 export default function TabContainer() {
   const [tab, setTab] = useState('about');
   return (
-    <>
+    <Suspense fallback={<h1>🌀 Loading...</h1>}>
       <TabButton
         isActive={tab === 'about'}
         onClick={() => setTab('about')}
@@ -18,7 +18,7 @@ export default function TabContainer() {
         isActive={tab === 'posts'}
         onClick={() => setTab('posts')}
       >
-        Posts (slow)
+        Posts
       </TabButton>
       <TabButton
         isActive={tab === 'contact'}
@@ -30,6 +30,6 @@ export default function TabContainer() {
       {tab === 'about' && <AboutTab />}
       {tab === 'posts' && <PostsTab />}
       {tab === 'contact' && <ContactTab />}
-    </>
+    </Suspense>
   );
 }
