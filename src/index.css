@@ -62,9 +62,7 @@ main {
   color: white;
 }
 
-.bio {
-  font-style: italic;
-}
+.bio { font-style: italic; }
 
 .panel {
   border: 1px solid #aaa;
@@ -75,7 +73,7 @@ main {
 
 .glimmer-panel {
   border: 1px dashed #aaa;
-  background: linear-gradient(90deg, rgba(221, 221, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%);
   border-radius: 6px;
   margin-top: 20px;
   padding: 10px;

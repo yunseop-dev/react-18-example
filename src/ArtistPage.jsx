@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
-import Albums from './Albums.js';
-import Biography from './Biography.js';
-import Panel from './Panel.js';
+import Albums from './Albums';
+import Biography from './Biography';
+import Panel from './Panel';
 
 export default function ArtistPage({ artist }) {
     return (

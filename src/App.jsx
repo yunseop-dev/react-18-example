@@ -1,7 +1,7 @@
 import { Suspense, useState, useTransition } from 'react';
-import IndexPage from './IndexPage.js';
-import ArtistPage from './ArtistPage.js';
-import Layout from './Layout.js';
+import IndexPage from './IndexPage';
+import ArtistPage from './ArtistPage';
+import Layout from './Layout';
 
 export default function App() {
   return (
